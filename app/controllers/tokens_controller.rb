@@ -1,6 +1,3 @@
-require 'uri'
-require 'net/http'
-
 class TokensController < ApplicationController
   def details
     url = URI("https://min-api.cryptocompare.com/data/price?fsym=DICE&tsyms=ETH%2CUSD%2CIDR")
