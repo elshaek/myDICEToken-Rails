@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyDICETokenRails</title>
+    <title>MyDICEToken</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <%= link_to "USD", currencies_USD_path %>
+    <%= link_to "IDR", currencies_IDR_path %>
+    <%= link_to "ÐICE", token_details_path %>
     <%= yield %>
   </body>
 </html>
