@@ -1,5 +1,26 @@
+<p><%= image_tag "https://www.cryptocompare.com/media/1383361/dice.png", size: '120x120' %></p>
 <p>Contract Address: <%= link_to '0x2e071D2966Aa7D8dECB1005885bA1977D6038A65', 'https://etherscan.io/address/0x2e071D2966Aa7D8dECB1005885bA1977D6038A65', target: '_blank' %></p>
-<p>Token Decimals: </p>
-<p>Value per Token: </p>
-<p>Token Holders: </p>
-<p>No. of Transfers: </p>
+<p>Token Decimals: 16</p>
+<p>Value per Token: <%= @usd %> USD | <%= @idr %> IDR | <%= @eth %> ETH</p>
+<p>Official Links:
+  <span>
+    <%= link_to 'http://etheroll.com', target: '_blank', class: 'icons' do %>
+      <span><%= fa_icon 'globe' %></span>
+    <% end %>
+  </span>
+  <span>
+    <%= link_to 'http://etheroll.wordpress.com', target: '_blank', class: 'icons' do %>
+      <span><%= fa_icon 'wordpress' %></span>
+    <% end %>
+  </span>
+  <span>
+    <%= link_to 'https://coinmarketcap.com/currencies/etheroll/', target: '_blank', class: 'icons' do %>
+      <span><%= fa_icon 'line-chart' %></span>
+    <% end %>
+  </span>
+  <span>
+    <%= mail_to 'support@etheroll.com', class: 'icons' do %>
+      <span><%= fa_icon 'envelope' %></span>
+    <% end %>
+  </span>
+</p>
